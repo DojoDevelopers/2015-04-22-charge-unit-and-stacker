@@ -12,9 +12,9 @@ A unidade de cobrança de frete é baseada nos totais de _peso_ e _volume_ do(s)
 	Se:
 		(volume total dos produtos) > peso total
 	Então:
-		unidade de cobrança de frete = _frete volumetrico_
+		unidade de cobrança de frete = frete volumetrico
 	Em outro caso:
-		unidade de cobrança de frete = _frete por peso bruto_
+		unidade de cobrança de frete = frete por peso bruto
 
 Uma vez que:
 
@@ -22,7 +22,7 @@ Uma vez que:
 	- volume total dos itens = (volume * fator de cubagem) * quantidade
 	  * Obs. O fator de cubagem = 1.66
 
-# Objetivo
+# Resolvendo o puzzle
 
 ## Dada a seguinte entrada:
 	{
@@ -40,7 +40,7 @@ Uma vez que:
 	    }
 	}
 
-## Devemos descobrir a _"unidade de cobrança de frete"_ para cadaq sku.
+## Devemos descobrir a _"unidade de cobrança de frete"_ para cada sku.
 	{
     		"sku-1": "frete volumetrico",
     		"sku-2": "frete por peso bruto"
