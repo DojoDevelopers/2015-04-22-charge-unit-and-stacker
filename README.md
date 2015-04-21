@@ -1,3 +1,20 @@
+# Objetivo
+
+> ### Baby steps
+	Continuar trabalhando o conceito de Baby steps.
+
+> ###  Skeleton
+	Overview sobre como utilizar o nosso [Skeleton](https://github.com/DojoDevelopers/Skeleton) para criar um puzzle
+
+> ### setUp() e tearDown()
+	Conhecer e implementar as funções setUp() e tearDown() da classe PHPUnit_TestCase
+
+> ### Algorítmio de frete
+	Utilização de algortímo "similar" ao do nosso dia a dia.
+	
+> ### Faixa bonus
+	Vamos simular uma alteração em um código legado
+
 # Puzzle
 
 Para calcular o valor do frete de um ou mais produtos, é necessário descobrir a *"unidade de cobrança de frete"*.
@@ -24,27 +41,76 @@ Uma vez que:
 
 # Resolvendo o puzzle
 
-## Dada a seguinte entrada:
+Dada a seguinte entrada:
+
 	{
 	    "sku-1": {
 	        "quantidade": 3,
-	        "fator_de_empilhamento": 500,
-	        "peso": 1500, // peso em gramas
-	        "volume": 1000 // largura * altura * profundidade
+	        "peso": 500, // peso em gramas
+	        "volume": 600 // largura * altura * profundidade
 	    },
 	    "sku-2": {
 	        "quantidade": 3,
-	        "fator_de_empilhamento": null,
-	        "peso": 3500,
-	        "volume": 2000
+	        "peso": 670, // peso em gramas
+	        "volume": 400 // largura * altura * profundidade
 	    }
 	}
 
-## Devemos descobrir a _"unidade de cobrança de frete"_ para cada sku.
+Devemos descobrir a _"unidade de cobrança de frete"_ para cada sku.
+
 	{
     		"sku-1": "frete volumetrico",
+    		// [volume total] = 2988 (600 * 1.66 * 3)
+    		// [peso total] = 1500  (500 * 3)
+    		
     		"sku-2": "frete por peso bruto"
+    		// [peso total] = 2010  (670 * 3)
+    		// [volume total] = 1992 (400 * 1.66 * 3)
 	}
 
 
-# @todo Descrever a excessão para empilháveis
+# Bonus track - A excessão para items empilháveis
+
+O algortimo que acabamos de criar precisa sofrer uma alteração.
+
+Alguns produtos podem ser empilháveis, e isto deve ser considerado na escolha da *"unidade de cobrança de frete"*
+
+Para consideramos uma sku como empilhável, ela deve atender os seguintes pré-reqiusitos:
+	
+	- Possuir o atributo fator_de_empilhamento
+	- Quantidade > 1
+
+### Alteração no algoritmo 
+
+O algoritmo de escolha da *"unidade de cobrança de frete"* deve somar o *"fator de empilhamento"* para cada produto adicional
+	
+		* Apresentação do exemplo da cadeira na lousa
+
+Dada a seguinte entrada:
+
+	{
+	    "sku-1": {
+	        "quantidade": 3,
+	        "fator_de_empilhamento": 350,
+	        "peso": 500,
+	        "volume": 600
+	    },
+	    "sku-2": {
+	        "quantidade": 3,
+	        "fator_de_empilhamento": 300,
+	        "peso": 670,
+	        "volume": 400
+	    }
+	}
+
+Devemos descobrir a _"unidade de cobrança de frete"_ para cada sku.
+
+	{
+    		"sku-1": "frete volumetrico",
+		// [volume total] = 1696 (600 * 1.66 + 700)
+    		// [peso total] = 1500 (500 * 3)
+    		
+    		"sku-2": "frete por peso bruto"
+    		// [peso total] = 2010 (670 * 3)
+    		// [volume total] = 1264 (400 * 1.66 + 600)
+	}
