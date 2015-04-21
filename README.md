@@ -7,14 +7,14 @@ Existem 2 tipos de unidade de cobrança de frete:
 	- frete volumetrico
 	- frete por peso bruto
 
-A unidade de cobrança de frete é baseada nos totais de _peso_ e _volume_ dos produto:
+A unidade de cobrança de frete é baseada nos totais de _peso_ e _volume_ do(s) produto(s):
 
 	Se:
 		(volume total dos produtos) > peso total
 	Então:
-		unidade de cobrança de frete = frete volumetrico
+		unidade de cobrança de frete = _frete volumetrico_
 	Em outro caso:
-		unidade de cobrança de frete = frete por peso bruto
+		unidade de cobrança de frete = _frete por peso bruto_
 
 Uma vez que:
 
@@ -40,6 +40,11 @@ Uma vez que:
 	    }
 	}
 
-## Descobrir a _"unidade de cobrança de frete"_
+## Devemos descobrir a _"unidade de cobrança de frete"_ para cadaq sku.
+	{
+    		"sku-1": "frete volumetrico",
+    		"sku-2": "frete por peso bruto"
+	}
+
 
 # @todo Descrever a excessão para empilháveis
