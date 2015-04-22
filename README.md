@@ -86,6 +86,10 @@ O algoritmo de escolha da *"unidade de cobrança de frete"* deve somar o *"fator
 	
 		* Apresentação do exemplo da cadeira na lousa
 
+Formula
+
+	(volume * fator de cubagem) + (fator_de_empilhamento * (quantidade - 1))
+
 Dada a seguinte entrada:
 
 	{
@@ -107,7 +111,7 @@ Devemos descobrir a _"unidade de cobrança de frete"_ para cada sku.
 
 	{
     		"sku-1": "frete volumetrico",
-		// [volume total] = 1696 (600 * 1.66 + 700)
+    		// [volume total] = 1696 (600 * 1.66 + 700)
     		// [peso total] = 1500 (500 * 3)
     		
     		"sku-2": "frete por peso bruto"
