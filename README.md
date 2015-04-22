@@ -71,7 +71,7 @@ Devemos descobrir a _"unidade de cobrança de frete"_ para cada sku.
 
 # Bonus track - A excessão para items empilháveis
 
-O algortimo que acabamos de criar precisa sofrer uma alteração.
+O algortimo que acabamos de criar sofrerá uma alteração.
 
 Alguns produtos podem ser empilháveis, e isto deve ser considerado na escolha da *"unidade de cobrança de frete"*
 
@@ -118,3 +118,16 @@ Devemos descobrir a _"unidade de cobrança de frete"_ para cada sku.
     		// [peso total] = 2010 (670 * 3)
     		// [volume total] = 1264 (400 * 1.66 + 600)
 	}
+
+### Before starting
+
+Antes de começarmos com a mão na massa. Que tal analisar o impacto de nossa alteração no código legado?
+Antes de sair codando é legal nos questionarmos sobre coisas dom tipo:
+
+	Os testes antigos devem manter o mesmo comportamento com a nova implementação que esta por vir?
+
+	Esta é uma mudança na regra de negócio existente ou o que vamos implementar é apenas uma exceção da regra?
+	
+No nosso caso em específico, estamos implementando uma excessão da regra, portando para este caso os testes devem continuar funcionando ao termino do nosso desenvolvimento.
+
+Com base nesta informação, nós devemos verificar se podemos reaproveitar algo do teste legado ou até mesmo melhora-lo se for o caso.
