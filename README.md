@@ -1,19 +1,19 @@
 # Objetivo
 
-> ### Baby steps
-	Continuar trabalhando o conceito de Baby steps.
+###  Skeleton
+Overview sobre como utilizar o nosso [Skeleton](https://github.com/DojoDevelopers/Skeleton) para criar um puzzle
 
-> ###  Skeleton
-	Overview sobre como utilizar o nosso [Skeleton](https://github.com/DojoDevelopers/Skeleton) para criar um puzzle
+### Baby steps
+Continuar trabalhando o conceito de Baby steps.
 
-> ### setUp() e tearDown()
-	Conhecer e implementar as funções setUp() e tearDown() da classe PHPUnit_TestCase
+### setUp() e tearDown()
+Conhecer e implementar as funções setUp() e tearDown() da classe PHPUnit_TestCase
 
-> ### Algorítmio de frete
-	Utilização de algortímo "similar" ao do nosso dia a dia.
+### Algorítmio de frete
+Utilização de algortímo "similar" ao do nosso dia a dia.
 	
-> ### Faixa bonus
-	Vamos simular uma alteração em um código legado
+### Faixa bonus
+Vamos simular uma alteração em um código legado
 
 # Puzzle
 
