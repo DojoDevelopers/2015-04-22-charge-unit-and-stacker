@@ -131,3 +131,30 @@ Antes de sair codando é legal nos questionarmos sobre coisas dom tipo:
 No nosso caso em específico, estamos implementando uma excessão da regra, portando para este caso os testes devem continuar funcionando ao termino do nosso desenvolvimento.
 
 Com base nesta informação, nós devemos verificar se podemos reaproveitar algo do teste legado ou até mesmo melhora-lo se for o caso.
+
+
+# Feedback
+
+### Participantes
+
+* Alexandre
+* Arthur
+* Caio
+* Daniel
+* Mangierre
+* Vinicius
+* Wilton
+
+### Pontos negativos *=/*
+
+* IDE *+++*
+* Falta de foco na didatica e maior enfoque no prazo *++*
+* Entendimento do puzzle *++*
+* Tempo limtado *++* (sugestão 2 rodadas)
+* Conversa durante o dojo *+*
+* Formado do Puzzle *+*
+* Testes rodados poucas vezes *+*
+
+### Pontos positivos
+
+* Utilização de novos metodos do PHP Unit *+*
