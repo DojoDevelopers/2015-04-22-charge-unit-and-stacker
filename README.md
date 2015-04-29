@@ -1,7 +1,7 @@
 # Objetivo
 
 ###  Skeleton
-Overview sobre como utilizar o nosso [Skeleton](https://github.com/DojoDevelopers/Skeleton) para criar um puzzle
+Apresentação de uma estrutura "esqueleto" para futuros dojos.
 
 ### Baby steps
 Continuar trabalhando o conceito de Baby steps.
