@@ -2,7 +2,6 @@
 
 namespace Dojo;
 
-use Dojo\Example;
 use PHPUnit_Framework_TestCase as PHPUnit;
 
 /**
@@ -10,12 +9,12 @@ use PHPUnit_Framework_TestCase as PHPUnit;
  */
 class ExampleTest extends PHPUnit
 {
-	public function testInstanceCreation()
-	{
-		$this->assertInstanceOf(
-			'Dojo\Example',
-			new Example(),
-			'Falha no assetInstanceOf da classe Dojo\Example'
-		);
-	}	
+    public function testInstanceCreation()
+    {
+        $this->assertInstanceOf(
+            'Dojo\Example',
+            new Example(),
+            'Falha no assetInstanceOf da classe Dojo\Example'
+        );
+    }
 }

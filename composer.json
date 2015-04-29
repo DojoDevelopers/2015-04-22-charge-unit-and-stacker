@@ -6,7 +6,7 @@
     	"psr-4": {
     		"Dojo\\" : [
     			"src/Dojo",
-    			"test/Dojo"
+    			"tests/Dojo"
     		]
     	}
     }
